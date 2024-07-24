@@ -21,9 +21,9 @@
   "greet actions";
 }
 
-.header-bar svg {
-  height: 20px;
-  width: 20px;
+.header-bar label, .header-bar svg {
+  height: 3.5vh;
+  width: 5vw;
 }
 
 .user-img {
@@ -40,6 +40,19 @@
 
 .search-section {
   grid-area: search;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-content: center;
+  gap: 1vw 1vh;
+}
+
+#search {
+  appearance: none;
+  width: 90%;
+  height: 3vh;
+  border-radius: 20px;
+  border: none;
+  background-color: #aaa;
 }
 
 .greet {
