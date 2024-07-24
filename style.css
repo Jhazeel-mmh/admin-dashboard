@@ -10,6 +10,52 @@
   grid-template: 1.25fr 5fr / repeat(5, 1fr);
 }
 
+/* header bar */
+
+.header-bar {
+  grid-area: 1 / 2 / 1 / 6;
+  display: grid;
+  grid-template: 1fr 1.5fr / 2fr 1fr;
+  grid-template-areas: 
+  "search profile"
+  "greet actions";
+}
+
+.header-bar svg {
+  height: 20px;
+  width: 20px;
+}
+
+.user-img {
+  width: 3vw;
+  height: 6vh;
+  background-color: #aaa;
+  border-radius: 50px;
+}
+
+.img-small {
+  width: calc(3vw * 0.7);
+  height: calc(6vh * 0.7);
+}
+
+.search-section {
+  grid-area: search;
+}
+
+.greet {
+  grid-area: greet; 
+}
+
+.profile {
+  grid-area: profile;
+}
+
+.actions {
+  grid-area: actions;
+}
+
+
+
  /* aside */
 
 .aside {
@@ -42,7 +88,7 @@
 
 ul, li {
   list-style-type: none;
-  padding: 0;
+
 }
 
 .dashboard-title > svg {
