@@ -143,4 +143,15 @@ li > svg {
   height: 30px;
 }
 
+/* main */
 
+.main {
+  grid-area: 2 / 2 / -1 / -1;
+  display: grid;
+  grid-template: 1fr / 3fr 1fr;
+}
+
+.project-actions svg {
+  width: 3vw;
+  height: 3vh;
+}
