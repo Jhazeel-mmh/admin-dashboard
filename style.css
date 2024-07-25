@@ -19,6 +19,7 @@
   grid-template-areas: 
   "search profile"
   "greet actions";
+  padding: 30px;
 }
 
 .header-bar label, .header-bar svg {
@@ -73,10 +74,26 @@
 
 .profile {
   grid-area: profile;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
 }
 
 .actions {
   grid-area: actions;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.actions > button {
+  border: none;
+  border-radius: 20px;
+  padding: 1vh 2vw;
 }
 
 
