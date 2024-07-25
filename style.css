@@ -151,6 +151,25 @@ li > svg {
   grid-template: 1fr / 3fr 1fr;
 }
 
+.projects-gallery {
+  padding: 1vh 2vw;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+
+.projects-gallery-grid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / 1fr 1fr;
+  gap: 1vh 2vw;
+}
+
+.project-actions {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  justify-content: end;
+}
+
 .project-actions svg {
   width: 3vw;
   height: 3vh;
