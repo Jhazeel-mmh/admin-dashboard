@@ -53,3 +53,9 @@ PROJECTS.forEach(p => {
 });
 
 
+let svgs = document.querySelectorAll(".star");
+svgs.forEach(svg => {
+    svg.addEventListener("click", () => {
+        svg.classList.toggle("checked");
+    });
+});
