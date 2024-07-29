@@ -243,6 +243,11 @@ li > svg {
   gap: 10px;
   padding: 15px;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.1);
 }
 
 .project-actions {
@@ -255,6 +260,17 @@ li > svg {
 .project-actions svg {
   width: 20px;
   height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-actions svg:hover {
+  transform: scale(1.3);
+}
+
+
+/* class for checked star */
+.checked {
+  fill: var(--primary-color);
 }
 
 
