@@ -142,8 +142,8 @@
 .dashboard-title {
   grid-area: title;
   display: grid;
+  grid-template-columns: minmax(100px, 5vw) 1fr;
   justify-self: start;
-  grid-auto-flow: column;
   align-items: center;
   justify-items: start;
   padding: 0;
@@ -155,13 +155,17 @@
 }
 
 .dashboard-title > svg {
-  height: 100px;
-  width: 109px;
+  height: auto;
+  width: 100%;
 }
 
 .nav {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.nav > li:hover > svg {
+  fill: var(--white-color);
 }
 
 .nav-1 {
@@ -174,8 +178,13 @@
 
 .nav-item {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(50px ,1fr));
   justify-items: center;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  color: var(--white-color);
 }
 
 .nav-item-content {
